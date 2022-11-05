@@ -1,0 +1,32 @@
+-open cmd 
+-go to path loc 
+
+python -m virtualenv name
+cd name
+cd Scripts
+activate
+
+
+--while doing if you get the error of set execution policy then use command
+
+set-executionpolicy remotesigned
+
+-- work hear and then deactivate
+
+deactivate 
+
+then come out of the folders
+cd..
+cd..
+
+#to create virtua env with all libs which was in base interpreatur
+python -m virtualenv --system-site-package name
+
+# requirement .txt
+
+--to make requirement.txt
+
+pip freeze > requirements.txt
+
+-- to install the requirements.txt
+pip install - r requirements.txt
