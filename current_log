@@ -1,0 +1,145 @@
+2023-06-18 09:28:18,895 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 09:28:18,896 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 09:29:01,498 [INFO] 127.0.0.1 - - [18/Jun/2023 09:29:01] "GET /admin/sign_up HTTP/1.1" 200 -
+2023-06-18 09:29:01,594 [INFO] 127.0.0.1 - - [18/Jun/2023 09:29:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-06-18 09:41:25,940 [INFO] 127.0.0.1 - - [18/Jun/2023 09:41:25] "[31m[1mPOST /admin/sign_up HTTP/1.1[0m" 405 -
+2023-06-18 09:41:34,600 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 09:41:34,600 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 09:41:50,263 [INFO] 127.0.0.1 - - [18/Jun/2023 09:41:50] "[31m[1mPOST /admin/sign_up HTTP/1.1[0m" 415 -
+2023-06-18 11:33:04,389 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 11:33:04,389 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 11:37:05,474 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 11:37:05,474 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 11:37:16,621 [INFO] 127.0.0.1 - - [18/Jun/2023 11:37:16] "[33mGET / HTTP/1.1[0m" 404 -
+2023-06-18 11:37:16,721 [INFO] 127.0.0.1 - - [18/Jun/2023 11:37:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-06-18 11:37:39,803 [INFO] 127.0.0.1 - - [18/Jun/2023 11:37:39] "[31m[1mGET /admin/sign_up HTTP/1.1[0m" 405 -
+2023-06-18 11:37:55,307 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 11:37:55,307 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 11:37:58,012 [INFO] 127.0.0.1 - - [18/Jun/2023 11:37:58] "GET /admin/sign_up HTTP/1.1" 200 -
+2023-06-18 11:44:10,995 [INFO] 127.0.0.1 - - [18/Jun/2023 11:44:10] "GET /admin/sign_up HTTP/1.1" 200 -
+2023-06-18 11:44:17,480 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 11:44:17,481 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 11:44:20,464 [INFO] 127.0.0.1 - - [18/Jun/2023 11:44:20] "GET /admin/sign_up HTTP/1.1" 200 -
+2023-06-18 11:44:21,612 [INFO] 127.0.0.1 - - [18/Jun/2023 11:44:21] "GET /admin/sign_up HTTP/1.1" 200 -
+2023-06-18 11:51:05,586 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 11:51:05,586 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 11:52:17,109 [ERROR] Exception on /admin/sign_up [GET]
+Traceback (most recent call last):
+  File "C:\Users\ajink\OneDrive\Desktop\ASUR\env\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ajink\OneDrive\Desktop\ASUR\env\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ajink\OneDrive\Desktop\ASUR\env\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ajink\OneDrive\Desktop\ASUR\env\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\ajink\OneDrive\Desktop\ASUR\admin\register.py", line 21, in sign_up
+    return jsonify(data1), 200
+  File "C:\Users\ajink\OneDrive\Desktop\ASUR\env\lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "C:\Users\ajink\OneDrive\Desktop\ASUR\env\lib\site-packages\flask\json\provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "C:\Users\ajink\OneDrive\Desktop\ASUR\env\lib\site-packages\flask\json\provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ajink\OneDrive\Desktop\ASUR\env\lib\site-packages\flask\json\provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type ObjectId is not JSON serializable
+2023-06-18 11:52:17,125 [INFO] 127.0.0.1 - - [18/Jun/2023 11:52:17] "[35m[1mGET /admin/sign_up HTTP/1.1[0m" 500 -
+2023-06-18 11:53:07,073 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 11:53:07,073 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 11:53:12,564 [INFO] 127.0.0.1 - - [18/Jun/2023 11:53:12] "GET /admin/sign_up HTTP/1.1" 200 -
+2023-06-18 11:53:46,350 [INFO] 127.0.0.1 - - [18/Jun/2023 11:53:46] "[31m[1mPOST /admin/sign_up HTTP/1.1[0m" 405 -
+2023-06-18 11:54:00,135 [INFO] 127.0.0.1 - - [18/Jun/2023 11:54:00] "GET /admin/sign_up HTTP/1.1" 200 -
+2023-06-18 11:58:37,653 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 11:58:37,654 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:14:17,866 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:14:17,867 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:14:40,624 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:14:40,624 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:14:47,106 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:14:47,106 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:17:27,617 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:17:27,618 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:17:43,600 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:17:43,601 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:17:49,098 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:17:49,098 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:18:36,604 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:18:36,604 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:18:42,053 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:18:42,053 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:26:36,997 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:26:36,997 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:30:07,580 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:30:07,580 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:31:36,683 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:31:36,683 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:31:42,209 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:31:42,209 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:32:01,431 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:32:01,431 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:32:07,447 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:32:07,447 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:32:13,975 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:32:13,976 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:44:18,745 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:44:18,746 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 12:45:25,181 [ERROR] {'username': ['Not a valid string.']}
+Traceback (most recent call last):
+  File "C:\Users\ajink\OneDrive\Desktop\ASUR\contracts\users.py", line 26, in load_from_json
+    return schema.load(json_str), ''
+  File "C:\Users\ajink\OneDrive\Desktop\ASUR\env\lib\site-packages\marshmallow\schema.py", line 722, in load
+    return self._do_load(
+  File "C:\Users\ajink\OneDrive\Desktop\ASUR\env\lib\site-packages\marshmallow\schema.py", line 909, in _do_load
+    raise exc
+marshmallow.exceptions.ValidationError: {'username': ['Not a valid string.']}
+2023-06-18 12:47:31,312 [INFO] 127.0.0.1 - - [18/Jun/2023 12:47:31] "[31m[1mPOST /admin/sign_up HTTP/1.1[0m" 405 -
+2023-06-18 12:47:38,856 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 12:47:38,857 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 13:04:11,775 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 13:04:11,776 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 13:09:13,445 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 13:09:13,445 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 13:29:13,924 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 13:29:13,925 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 13:31:37,316 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-18 13:31:37,318 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-18 13:35:42,426 [INFO] 127.0.0.1 - - [18/Jun/2023 13:35:42] "POST /admin/sign_up HTTP/1.1" 200 -
+2023-06-18 13:39:51,557 [INFO] User already present with this Email: ajjusonwane0256@gmail.com
+2023-06-18 13:39:54,021 [INFO] 127.0.0.1 - - [18/Jun/2023 13:39:54] "[31m[1mPOST /admin/sign_up HTTP/1.1[0m" 422 -
